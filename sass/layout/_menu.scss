@@ -1,0 +1,204 @@
+// меню контактов - телефон и имэйл
+
+.page-head__contacts {
+  @include menu-format;
+}
+
+.menu-toggle-tel {
+  display: none;
+}
+
+.menu-contacts {
+  position: relative;
+
+  &__item {
+    color: rgb(255, 255, 255);
+  }
+
+  &__icon {
+    font-size: 1.25rem;
+  }
+
+  &__link,
+  &__link-mail {
+    font-size: 0.88rem;
+    font-weight: 300;
+    color: rgb(254, 254, 254);
+    &:hover {
+      color: $third-color;
+      font-weight: 600;
+    }
+  }
+
+  &__link-mail {
+    font-size: 0.88rem;
+    font-weight: 300;
+  }
+
+  &__icon-mail {
+    position: absolute;
+    top: 0.8rem;
+    left: 9.4rem;
+    font-size: 1.55rem;
+  }
+
+  &__text-mail {
+    position: absolute;
+    top: 0.25rem;
+    left: 11.35rem;
+  }
+
+  &__icon_login {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .menu-contacts {
+    position: static;
+
+    &__icon-mail {
+      position: static;
+      top: 0.8rem;
+      left: 9.4rem;
+      font-size: 1.55rem;
+    }
+
+    &__text-mail {
+      position: static;
+      display: none;
+    }
+
+    &__text-tel {
+      display: none;
+    }
+  }
+
+  .menu-toggle-tel {
+    display: block;
+  }
+
+  .page-head__contacts {
+    display: none;
+  }
+
+  .page-head__contacts-wrap:hover .page-head__contacts {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.75), 0 10px 10px rgba(0, 0, 0, 0.75);
+    background-color: $main-color;
+    z-index: 100;
+  }
+
+  .page-head__contacts .menu-contacts__item {
+    padding: 0 2rem;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.25);
+  }
+}
+
+// меню MyAccount первая строка сайта
+
+.page-head__menu-first {
+  @include menu-format;
+}
+
+.menu-toggle {
+  position: absolute;
+  right: 0.5rem;
+  display: none;
+}
+
+.menu-toggle-tel__icon-img,
+.menu-toggle__icon-img {
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 905px) {
+  .page-head__navigation .menu-contacts__link {
+    font-size: 0.9rem;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.15);
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .menu-second__list {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 785px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .page-head__menu-first {
+    display: none;
+  }
+
+  .page-head__navigation:hover .page-head__menu-first {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.75), 0 10px 10px rgba(0, 0, 0, 0.75);
+    background-color: rgb(88, 173, 156);
+    z-index: 100;
+  }
+
+  .page-head__menu-first .menu-contacts__item {
+    padding: 0 2rem;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.25);
+  }
+}
+
+// меню HOME вторая строка сайта
+
+.menu-second {
+  &__item {
+    color: rgb(15, 1, 1);
+  }
+
+  &__list {
+    @include menu-format($gap: 1.97rem);
+    padding-top: 0.5rem;
+    padding-left: 3.6rem;
+  }
+
+  &__link {
+    font-weight: 600;
+    font-size: 0.88rem;
+    &:hover {
+      color: $second-color;
+    }
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .menu-second__list {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .menu-second {
+    &__item {
+      color: rgb(15, 1, 1);
+      padding: 0.3rem;
+    }
+
+    &__list {
+      flex-direction: column;
+      gap: 1rem;
+      text-align: center;
+    }
+
+    &__link {
+      font-size: 1.2rem;
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.25);
+    }
+  }
+}

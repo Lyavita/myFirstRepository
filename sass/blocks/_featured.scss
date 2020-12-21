@@ -1,0 +1,117 @@
+.page-main__featur {
+  padding: 6.63rem 0 6rem 0;
+}
+
+.page-main__header-featur {
+  @include header-section;
+}
+
+.page-main__product-featur {
+  position: relative;
+}
+
+.featured__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.94rem;
+  justify-content: center;
+  padding-left: 2.5rem;
+  padding-top: 0.2rem;
+  margin-bottom: 6.69rem;
+}
+
+.page-main__collection-featur {
+  display: grid;
+  grid-template-columns: repeat(4, 255px);
+  grid-template-rows: repeat(2, 320px);
+  grid-template-areas:
+    "shoes1 belt1 hat bag1"
+    "bag2 belt2 shoes2 glasses";
+  gap: 1.87rem;
+}
+
+.product_shoes1 {
+  grid-area: shoes1;
+}
+
+.product_hat {
+  grid-area: hat;
+}
+
+.product_belt1 {
+  grid-area: belt1;
+}
+
+.product_bag1 {
+  grid-area: bag1;
+}
+
+.product_bag2 {
+  grid-area: bag2;
+}
+
+.product_belt2 {
+  grid-area: belt2;
+}
+
+.product_hoes2 {
+  grid-area: shoes2;
+}
+
+.product_glasses {
+  grid-area: glasses;
+}
+
+@media screen and (max-width: 1150px) {
+  .page-main__collection-featur {
+    gap: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .page-main__collection-featur {
+    grid-template-columns: 255px 255px;
+    grid-template-rows: repeat(4, 322px);
+    grid-template-areas:
+      "shoes1 hat"
+      "belt1 bag1"
+      "bag2 belt2"
+      "shoes2 glasses";
+    gap: 6rem;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 785px) {
+  .featured__buttons {
+    gap: 0.94rem;
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .page-main__collection-featur {
+    grid-template-columns: 255px 255px;
+    grid-template-rows: repeat(4, 322px);
+    grid-template-areas:
+      "shoes1 hat"
+      "belt1 bag1"
+      "bag2 belt2"
+      "shoes2 glasses";
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .page-main__collection-featur {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .page-main {
+    &__header-featur {
+      @include header-section-media;
+    }
+  }
+}

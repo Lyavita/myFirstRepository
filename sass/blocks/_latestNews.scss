@@ -1,0 +1,31 @@
+.page-main {
+    &__latest-news {
+      padding: 6.4rem 0 5rem 0;
+    }
+  
+    &__header-latest-news {
+      @include header-section;
+    }
+  
+    &__latest-news-container {
+      display: flex;
+      gap: 1.92rem;
+    }
+  }
+
+  
+
+  @media screen and (max-width: 785px) {
+
+    .page-main__latest-news-container {
+      flex-wrap: wrap;
+      gap: 30px;
+    }}
+
+    @media screen and (max-width: 520px) {
+      .page-main {
+         &__header-latest-news {
+       @include header-section-media;
+     }
+   }
+  }

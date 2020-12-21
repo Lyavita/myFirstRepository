@@ -1,0 +1,16 @@
+.page-main__bestsellers {
+    background-color: rgb(233, 240, 253);
+    padding: 6.25rem 0;
+  }
+  
+  .page-main__header-bestsellers {
+    @include header-section;
+  }
+
+  @media screen and (max-width: 520px) {
+    .page-main {
+      &__header-bestsellers {
+        @include header-section-media;
+   }
+  }
+}

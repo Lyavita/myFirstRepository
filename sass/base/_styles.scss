@@ -1,0 +1,38 @@
+a {
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+
+  &:link {
+    color:rgb(255, 255, 255);
+  }
+
+  &:visited {
+    color:inherit;
+  }
+
+  &:hover {
+    color: rgb(26, 188, 156);
+  }
+
+  &:active {
+    color: rgb(10, 110, 90);
+  }
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: solid 1px transparent;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: "Roboto", sans-serif;
+}
+
+blockquote {
+  text-align: center;
+}
+
+input:focus,
+textarea:focus {
+  border: 5px solid $second-color;
+}

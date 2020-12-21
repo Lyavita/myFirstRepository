@@ -1,0 +1,16 @@
+.page-main__review {max-width: 805px;
+    margin: 0 auto;
+    padding: 6.63rem 0 5rem 0;
+  }
+  
+  .page-main__header-review {
+    @include header-section;
+  }
+
+  @media screen and (max-width: 520px) {
+    .page-main {
+      &__header-review {
+        @include header-section-media;
+      }
+    }
+  }

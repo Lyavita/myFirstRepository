@@ -1,0 +1,212 @@
+// форма из раздела Newsletter
+
+.form-email {
+  &__label {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.6rem;
+    text-align: center;
+    letter-spacing: $lett-space-first;
+  }
+
+  &__input-wrap {
+    margin: 2.5rem auto 0 auto;
+  }
+}
+
+.input-email {
+  display: flex;
+  border: 0.13rem solid rgb(255, 255, 255);
+  border-radius: 5px;
+  width: fit-content;
+
+  &__content {
+    padding: 1rem 14.6rem 1.2rem 1.3rem;
+    color: $third-color;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: $lett-space-first;
+  }
+
+  &__input-icon {
+    padding: 0 1rem 0 1.6rem;
+    background-color: #4ec6ab;
+  }
+
+  &__input-icon-img {
+    color: rgb(255, 255, 255);
+    font-family: "Pe -icon -7-stroke";
+    font-size: 3.1rem;
+    font-weight: 400;
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .form-email {
+    &__label {
+      font-size: 1.2rem;
+    }
+  }
+
+  .input-email {
+    &__content {
+      padding: 1rem 4rem 1.2rem 2.2rem;
+      font-size: 1.4rem;
+    }
+
+    &__input-icon {
+      padding: 0 0.32rem 0 0.28rem;
+    }
+
+    &__input-icon-img {
+      font-size: 3rem;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .form-email__label {
+    font-size: 1.3rem;
+  }
+
+  .input-email {
+    &__content {
+      padding: 1rem 1.15rem 1.15rem 0.2rem;
+    }
+
+    &__input-icon {
+      padding: 0 0.2rem 0 0.3rem;
+    }
+
+    &__input-icon-img {
+      font-size: 2.6rem;
+    }
+  }
+}
+
+// форма из раздела GetInTouch
+
+.contacts-form {
+  &__form {
+    max-width: 533px;
+    padding-top: 0.63rem;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1.89rem;
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+  }
+}
+
+.input-textarea-sizes {
+  padding: 0.81rem 0 0.81rem 1.13rem;
+  background-color: transparent;
+  font-family: "Roboto", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 1.13rem;
+  font-weight: 300;
+  text-align: left;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.form-write-to-us {
+  &__input {
+    @extend .input-textarea-sizes;
+
+    &::-webkit-input-placeholder {
+      color: rgb(255, 255, 255);
+    }
+    &::-moz-placeholder {
+      color: rgb(255, 255, 255);
+    }
+    &:-moz-placeholder {
+      color: rgb(255, 255, 255);
+    }
+    &:-ms-input-placeholder {
+      color: rgb(255, 255, 255);
+    }
+    &:hover {
+      border: 1px solid $main-color;
+
+      &::-webkit-input-placeholder {
+        color: $main-color;
+      }
+      &::-moz-placeholder {
+        color: $main-color;
+      }
+      &:-moz-placeholder {
+        color: $main-color;
+      }
+      &:-ms-input-placeholder {
+        color: $main-color;
+      }
+    }
+  }
+
+  &__textarea {
+    min-width: 533px;
+    @extend .input-textarea-sizes;
+
+    &::-webkit-input-placeholder {
+      color: rgb(255, 255, 255);
+    }
+    &::-moz-placeholder {
+      color: rgb(255, 255, 255);
+      font-weight: 500;
+    }
+    &:-moz-placeholder {
+      color: rgb(255, 255, 255);
+      font-weight: 500;
+    }
+    &:-ms-input-placeholder {
+      color: rgb(255, 255, 255);
+      font-weight: 500;
+    }
+    &:hover {
+      border: 1px solid rgb(70, 191, 169);
+
+      &::-webkit-input-placeholder {
+        color: rgb(70, 191, 169);
+      }
+      &::-moz-placeholder {
+        color: rgb(70, 191, 169);
+        font-weight: 500;
+      }
+      &:-moz-placeholder {
+        color: rgb(70, 191, 169);
+        font-weight: 500;
+      }
+      &:-ms-input-placeholder {
+        color: $main-color;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .contacts-form {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  }
+@media screen and (max-width: 625px) {
+  .form-write-to-us {
+    &__input {
+      margin: 0 auto;
+    }
+
+    &__textarea {
+      min-width: 0;
+      max-width: 18rem;
+      padding: 0.8rem 0 0.8rem 1rem;
+      margin: 0 auto;
+    }
+
+    &__button {
+      margin: 0 auto;
+    }
+  }
+}

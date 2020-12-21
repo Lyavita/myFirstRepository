@@ -1,0 +1,13 @@
+.page-main {
+    &-newsletter {
+      padding: 6.3rem 0 8.4rem 0;
+      background: center/cover no-repeat url(../images/newsletter.jpg);
+      color: rgb(81, 81, 81);
+      text-align: center;
+    }
+  
+    &__header-newsletter {
+      @include header-section;
+    }
+  }
+  

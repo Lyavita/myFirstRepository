@@ -1,0 +1,16 @@
+.page-main__news {
+    display: flex;
+    margin-top: 5.75rem;
+    margin-bottom: 5rem;
+    gap: 1.8rem;
+    }
+
+    @media screen and (max-width: 840px) {
+   
+        .page-main__news {
+          display: flex;
+          flex-wrap: wrap;
+          max-width: 350px;
+          margin-top: 92px;
+          gap: 29px;
+        }}

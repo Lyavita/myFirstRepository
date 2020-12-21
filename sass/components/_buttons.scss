@@ -1,0 +1,256 @@
+// кнопка в хэдере для покупки
+
+.button-buy-now {
+  padding: 0.63rem 1.81rem;
+  border: 2px solid $second-color;
+  font-size: 0.88rem;
+  font-weight: 400;
+  letter-spacing: -0.018rem;
+  &:hover {
+    transform: scale(1.5);
+    transition: 0.4s ease-in-out;
+    background-color: $second-color;
+  }
+}
+
+.page-head__button-buy-now {
+  position: absolute;
+  left: 42.5%;
+  bottom: -57%;
+}
+
+@media screen and (max-width: 625px) {
+  .button-buy-now {
+    padding: 0.81rem 2.06rem;
+    color: rgb(0, 0, 0);
+    border: 4px solid $second-color;
+
+    &:hover {
+      transform: scale(1.5);
+      background-color: $second-color;
+    }
+  }
+}
+
+// кнопки в каруселе право лево
+
+.button-arrow {
+  width: 6.5rem;
+  height: 6.5rem;
+  background-color: $second-color;
+  opacity: 0.6;
+
+  &:hover {
+    transform: translate(0, 4%);
+    opacity: 1;
+  }
+
+  &__icon {
+    position: absolute;
+    font-size: 6.25rem;
+    color: rgb(255, 255, 255);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-width: 905px) {
+  .button-arrow {
+    width: 5rem;
+    height: 5rem;
+
+    &__icon {
+      font-size: 4.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .button-arrow {
+    width: 3.5rem;
+    height: 3.5rem;
+
+    &__icon {
+      font-size: 2.6rem;
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .button-arrow {
+    width: 2.6rem;
+    height: 2.6rem;
+
+    &__icon {
+      font-size: 2.6rem;
+    }
+  }
+}
+
+// кнопки в продукте на затемнении
+
+.product-button-small {
+  padding: 0.56rem 0.56rem;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: transparent;
+
+  &:hover {
+    background-color: $second-color;
+    border: none;
+  }
+}
+
+.product-button-small__icon {
+  font-size: 1.89rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+.product-button-big {
+  padding: 0.56rem 1.06rem 0.56rem 0.75rem;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgb(50, 50, 50);
+
+  &:hover {
+    background-color: $second-color;
+    border: none;
+  }
+
+  &__icon {
+    color: rgb(255, 255, 255);
+    font-size: 1.89rem;
+    font-weight: 400;
+    line-height: 2rem;
+    text-align: left;
+    letter-spacing: -0.6px;
+    padding-right: 1.19rem;
+  }
+
+  &__text {
+    color: rgb(255, 255, 255);
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.89rem;
+    font-weight: 400;
+    line-height: 2rem;
+    letter-spacing: -0.28px;
+    padding-right: 2px;
+  }
+}
+
+// кнопки в блоке Feature - сэйл и нью
+
+.button-new-sale {
+  padding: 0 1rem;
+  border: 1px solid rgb(0, 0, 0);
+  color: $third-color;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.7rem;
+  text-align: center;
+  letter-spacing: $lett-space-first;
+}
+
+.product__foto:hover .product__button-sale {
+  background-color: $second-color;
+  animation: roll 3s infinite;
+  transform: rotate(30deg);
+  opacity: 0.7;
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.product__foto:hover .product__button-new {
+  background-color: $second-color;
+}
+
+// верхние кнопки фильтра в блоке Feature
+
+.featur-button {
+  padding: 0 0.69rem;
+  border-radius: 3px;
+  border: 1px solid #959595;
+  color: $third-color;
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+  background-color: rgb(255, 255, 255);
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &_all {
+    font-size: 1rem;
+    padding: 0 0.81rem;
+  }
+
+  &:hover {
+    border: 1px solid $second-color;
+    background-color: $second-color;
+  }
+}
+
+.featur-button {
+  &_all-wrap {
+    position: relative;
+
+    &:before {
+      display: flex;
+      content: "8";
+      position: absolute;
+      opacity: 1;
+      align-items: center;
+      justify-content: center;
+      top: -30px;
+      left: 27px;
+      width: 2.19rem;
+      height: 2.19rem;
+      text-align: center;
+      border-radius: 50%;
+      border: 1px solid rgb(0, 0, 0);
+      color: $second-color;
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+  }
+}
+
+// кнопка в блоке Latest
+
+.latest-news-button {
+  border-radius: 3px;
+  padding: 0.69rem 2.69rem 0.75rem 2.5rem;
+  background-color: rgb(78, 198, 171);
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.63rem;
+  letter-spacing: $lett-space-first;
+  &:hover {
+    transform: scale(1.3);
+  }
+}
+
+// кнопка в блоке Контактов
+
+.form-write-to-us-button {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 1rem 3.44rem;
+  background-color: $main-color;
+}
+
+@media screen and (max-width: 625px) {
+  .form-write-to-us-button {
+    font-size: 1.3rem;
+    padding: 1rem 6.6rem;
+    background-color: $main-color;
+  }
+}

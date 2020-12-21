@@ -1,0 +1,78 @@
+.review {
+    &__photo {
+      max-width: 222px;
+      height: 100%;
+      border-radius: 50%;
+      margin: 0 auto;
+    }
+  
+    &__text {
+      margin: 1.7rem 0 1.13rem 0;
+      color: rgb(81, 81, 81);
+      
+      font-size: 0.88rem;
+      font-weight: 300;
+      line-height: 1.52rem;
+      letter-spacing: -0.018rem;
+      text-align: center;
+    }
+  
+    &__footer {
+     text-align: center;
+  
+      &-firstline {
+        font-size: 1.13rem;
+        font-weight: 700;
+        color: $second-color;
+        font-style: normal;
+        letter-spacing: -0.023rem;
+        line-height: 1.52rem;
+      }
+  
+      &-secondline {
+        font-size: 0.88rem;
+        color: rgb(81, 81, 81);
+        font-weight: 300;
+        font-style: normal;
+        letter-spacing: $lett-space-first;
+        line-height: 0.75rem;
+      }
+    }
+  
+    &__photo-small {
+      max-width: 82px;
+      max-height: 82px;
+      border-radius: 50%;
+      border: 5px solid rgb(0, 0, 0);
+      background-color: rgb(255, 255, 255);
+      background: center;
+      cursor: pointer;
+  
+      &:hover {
+        border: 5px solid $fourth-color;
+      }
+    }
+  
+    &__customers {
+      display: flex;
+      justify-content: center;
+      gap: 1.3rem;
+      margin-top: 1.88rem;
+    }
+  }
+
+  @media screen and (max-width: 840px) {
+   
+    .review {
+      &__text {
+        font-size: 1.3rem;
+        line-height: 2;
+      }
+      &__footer-firstline {
+        font-size: 1.9rem;
+        line-height: 2;
+      }
+      &__footer-secondline {
+        font-size: 1.3rem;
+      }
+    }}

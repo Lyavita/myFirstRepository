@@ -1,0 +1,57 @@
+.page-head {
+    margin-top: 0;
+  
+    &__row1-wrap {
+      background-color: $second-color;
+      line-height: 3.1;
+    }
+  
+    &__row1 {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+    }
+  
+      &__row2 {
+      margin-top: 1.08rem;
+      margin-bottom: 1.7rem;
+      display: flex;
+  
+      gap: 2rem;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  @media screen and (max-width: 840px) {
+
+    .page-head__row2 {
+      flex-direction: column;
+    }
+  
+    .page-head__logo {
+      order: -2;
+    }
+  
+    .page-head__cart {
+      order: -1;
+    }
+  }
+
+  @media screen and (max-width: 520px) {
+  .page-head {
+    &__row2 {
+      position: relative;
+    }
+
+    &__logo {
+      align-self: flex-start;
+    }
+
+    &__cart {
+      position: absolute;
+      top: 1.2rem;
+      align-self: flex-end;
+    }
+  }
+}

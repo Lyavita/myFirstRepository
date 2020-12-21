@@ -1,0 +1,32 @@
+.logo {
+  color: $third-color;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.88rem;
+  font-weight: 300;
+  letter-spacing: -0.6px;
+  padding-top: 0.6rem;
+
+  &__logo-M {
+    color: $second-color;
+    font-weight: 800;
+  }
+}
+
+.logo-second {
+       color: rgb(255, 255, 255);
+      font-family: "Roboto", sans-serif;
+      font-size: 4.5rem;
+      font-weight: 300;
+      text-align: left;
+      letter-spacing: -0.09rem;
+
+
+    &__logo-M {
+      color: rgb(78, 198, 171);
+    }}
+
+    @media screen and (max-width: 840px) {
+    .logo-second {
+      color: rgb(0, 0, 0);
+    }
+  }

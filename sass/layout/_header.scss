@@ -1,0 +1,142 @@
+.page-head {
+  margin-top: 0;
+
+  &__header {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-51%, -80%);
+  }
+}
+
+.main-header {
+  font-size: 3rem;
+  color: rgb(255, 252, 252);
+  text-align: center;
+  line-height: normal;
+
+  &__first-line {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 0;
+    padding-bottom: 1.5rem;
+  }
+
+  &__second-line {
+    display: inline-block;
+    font-weight: 600;
+    letter-spacing: -0.16rem;
+    line-height: 0;
+  }
+
+  &__third-line {
+    display: inline-block;
+    font-weight: 600;
+    letter-spacing: -0.16rem;
+     }
+
+  &__green-bold-and {
+    color: $second-color;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.06rem;
+  }
+
+  &__green-bold {
+    color: $second-color;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.96px;
+  }
+}
+
+@media screen and (max-width: 1540px) {
+  .main-header__third-line {
+    display: block;
+  }}
+
+@media screen and (max-width: 1100px) {
+  .main-header {
+    font-size: 2.4rem;
+    color: rgb(41, 40, 40);
+    text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
+      0px -5px 35px rgba(255, 255, 255, 0.3);
+
+    &__first-line {
+      font-size: 2.4rem;
+      font-weight: 800;
+    }
+
+    &__second-line {
+      font-size: 2.2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .main-header {
+    font-size: 1.6rem;
+
+    &__first-line {
+      font-size: 2.1rem;
+    }
+    &__second-line {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .page-head__header {
+    position: static;
+    margin: 0 auto;
+    margin-top: 2.6rem;
+  }
+
+  .page-head__roundabout:hover {
+    filter: brightness(80%);
+      }
+
+  .main-header {
+    font-size: 2rem;
+    transform: none;
+
+    &__first-line {
+      font-size: 2.4rem;
+      font-weight: 800;
+    }
+
+    &__second-line {
+      display: inline-block;
+    }
+
+    &__third-line {
+      display: block;
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main-header__first-line {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .main-header {
+    font-size: 1.5rem;
+    margin-top: 2.6rem;
+
+    &__first-line {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .main-header__first-line {
+    font-size: 1.4rem;
+  }
+}

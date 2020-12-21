@@ -1,0 +1,30 @@
+
+.page-main-new {
+    background-color: rgb(233, 240, 253);
+    padding: 6.25rem 0;
+  }
+  
+  .page-main__collection {
+    display: flex;
+    gap: 1.9rem;
+  }
+  
+  .page-main__header-new {
+    @include header-section;
+  }
+
+  @media screen and (max-width: 905px) {
+  
+          .page-main__collection {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 6rem;
+    }}
+
+    @media screen and (max-width: 520px) {
+      .page-main {
+          &__header-new{
+       @include header-section-media;
+     }
+   }
+  }

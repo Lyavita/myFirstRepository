@@ -1,0 +1,11 @@
+.main__line {
+    @include line;
+    margin-top: 2.2rem;
+    margin-bottom: 4.8rem;
+  }
+  
+  .main__line-white {
+    @include line($color: rgb(255, 255, 255));
+    margin-top: 2.2rem;
+    margin-bottom: 1.6rem;
+  }

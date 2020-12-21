@@ -1,0 +1,30 @@
+.page-main__season-sale {
+    padding: 9.6rem 0 8.5rem 0;
+    &:hover .main__season-sale-img {
+      filter: brightness(40%);
+    }
+  }
+  
+  .season-sale {
+    background: center no-repeat url(../images/escalator.jpg);
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+  
+  .header-season-sale {
+    color: rgb(255, 254, 254);
+    line-height: 2rem;
+      
+    &__first-line {
+      font-size: 60px;
+      font-weight: 900;
+      letter-spacing: -1.2px;
+    }
+  
+    &__second-line {
+      padding: 8px 0 0 0;
+      font-size: 36px;
+      font-weight: 300;
+      letter-spacing: -0.72px;
+    }
+  }

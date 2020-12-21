@@ -1,0 +1,143 @@
+// статьи из блока News
+
+.main-article {
+  color: $third-color;
+  text-align: center;
+
+  &__icon {
+    padding-right: 0.5rem;
+  }
+
+  &-icon {
+    font-size: 4.4rem;
+    font-weight: 400;
+    line-height: 2rem;
+  }
+
+  &__head {
+    margin-top: 2.7rem;
+    padding-right: 0.8rem;
+  }
+
+  &-head {
+    font-size: 1.13rem;
+    font-weight: 600;
+    line-height: 2rem;
+    letter-spacing: -0.023rem;
+  }
+
+  &__paragraph {
+    margin-top: 0.89rem;
+    padding-right: 0.31rem;
+  }
+
+  &-paragraph {
+    font-size: 0.88rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    letter-spacing: -0.018rem;
+  }
+}
+
+@media screen and (max-width: 840px) {
+   
+  .main-article {
+   &__paragraph {
+     font-size: 1.3rem;
+     font-weight: 300;
+   }
+
+   &-head {
+     font-size: 1.7rem;
+     font-weight: 600;
+   }
+ }
+}
+// статьи из блока LatestNews
+
+.latest-news-article-style {
+  color: $third-color;
+  line-height: 1.63rem;
+  }
+
+.latest-news-article {
+  &__paragr1 {
+    @extend .latest-news-article-style;
+    margin-top: 0.44rem;
+    max-width: 301px;
+    font-size: 1.13rem;
+    font-weight: 600;
+    letter-spacing: -0.033rem;
+  }
+
+  &__paragr2 {
+    @extend .latest-news-article-style;
+    margin-top: 1.25rem;
+    font-size: 0.88rem;
+    font-weight: 500;
+    letter-spacing: -0.011rem;
+  }
+
+  &__line {
+    width: 8.44rem;
+    height: 0.188rem;
+    border: none;
+    background-color: $fourth-color;
+    margin: 0;
+    text-align: left;
+    margin: 0.63rem 0;
+  }
+
+  &__button {
+    margin-top: 0.8rem;
+  }
+
+  &__img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 905px) {
+  
+  .latest-news-article {
+&__paragr1 {
+font-size: 24px;
+line-height: 40px;
+}
+
+&__paragr2 {
+font-size: 20px;
+}
+&__button {
+font-size: 22px;
+}
+}
+}
+
+@media screen and (max-width: 785px) {
+
+  .latest-news-article {
+    text-align: center;
+    &__paragr1 {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      max-width: 100%;
+      font-size: 26px;
+      font-weight: 600;
+      line-height: 32px;
+      text-align: center;
+    }
+
+    &__paragr2 {
+      margin-top: 25px;
+      font-size: 24px;
+      line-height: 36px;
+      text-align: center;
+    }
+    &__line {
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+}

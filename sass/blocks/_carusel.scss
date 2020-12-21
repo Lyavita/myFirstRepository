@@ -1,0 +1,65 @@
+.page-head {
+  &__roundabout {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    &:hover {
+      filter: brightness(40%);
+    }
+  }
+}
+
+.page-head {
+  &__button-arrow-left {
+    position: absolute;
+    top: 37%;
+    left: 0;
+  }
+
+  &__button-arrow-right {
+    position: absolute;
+    top: 37%;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 1540px) {
+  .page-head__button-buy-now {
+    left: 38%;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .page-head__button-buy-now {
+    left: 37%;
+  }
+}
+
+@media screen and (max-width: 905px) {
+  .page-head__button-buy-now {
+    left: 34%;
+  }
+}
+
+@media screen and (max-width: 785px) {
+  .page-head__button-buy-now {
+    left: 30%;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .page-head__button-buy-now {
+    position: static;
+    margin: 0 auto;
+  }
+
+  .button-arrow {
+    top: 17%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .button-arrow {
+    top: 10%;
+  }
+}
