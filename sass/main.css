@@ -421,14 +421,14 @@ textarea:focus {
 }
 
 .main-header__green-bold-and {
-  color: #1abc9c;
+  color: rgb(26, 188, 156);
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   letter-spacing: -0.06rem;
 }
 
 .main-header__green-bold {
-  color: #1abc9c;
+  color: rgb(26, 188, 156);
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   letter-spacing: -0.96px;
@@ -1813,7 +1813,8 @@ textarea:focus {
       grid-template-columns: repeat(4, 255px);
   -ms-grid-rows: (320px)[2];
       grid-template-rows: repeat(2, 320px);
-      grid-template-areas: "shoes1 belt1 hat bag1" "bag2 belt2 shoes2 glasses";
+      grid-template-areas: "shoes1 belt1 hat bag1"
+ "bag2 belt2 shoes2 glasses";
   gap: 1.87rem;
 }
 
@@ -1877,7 +1878,10 @@ textarea:focus {
         grid-template-columns: 255px 255px;
     -ms-grid-rows: (322px)[4];
         grid-template-rows: repeat(4, 322px);
-        grid-template-areas: "shoes1 hat" "belt1 bag1" "bag2 belt2" "shoes2 glasses";
+        grid-template-areas: "shoes1 hat"
+ "belt1 bag1"
+ "bag2 belt2"
+ "shoes2 glasses";
     gap: 6rem;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1898,7 +1902,10 @@ textarea:focus {
         grid-template-columns: 255px 255px;
     -ms-grid-rows: (322px)[4];
         grid-template-rows: repeat(4, 322px);
-        grid-template-areas: "shoes1 hat" "belt1 bag1" "bag2 belt2" "shoes2 glasses";
+        grid-template-areas: "shoes1 hat"
+ "belt1 bag1"
+ "bag2 belt2"
+ "shoes2 glasses";
     gap: 1rem;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
